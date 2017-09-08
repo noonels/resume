@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{xunicode,xltxtra,url,parskip,enumitem,marvosym,graphicx,titlesec,hyperref,setspace,siunitx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage[absolute]{textpos}
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks=false,allbordercolors={0 0 0},pdfborderstyle={/S/U/W 1}}
+
+\newcommand{\br}{\\\multicolumn{2}{c}{}}
+\newgeometry{noheadfoot=true,top=.5in,bottom=.5in, left=.5in, right=.5in}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\setlist[itemize]{label=$\circ$, leftmargin=12pt, noitemsep, before={\vspace*{-.5\baselineskip}}, after={\vspace*{-\baselineskip}}}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\par{\centering
+    {\Huge \textsc{Matthew Healy}
+}\bigskip\par}
+
+\begin{center}
+\begin{tabular}{rl}
+    \textsc{Email } & \href{mailto:mhealy@mst.edu}{mhealy@mst.edu} \\
+    \textsc{Phone }        & (217) 204 -- 1461  \\
+    \textsc{Github }      & \url{https://github.com/healym}
+\end{tabular}
+\end{center}
+
+\section{Objective}
+To obtain a software engineering internship focused on challenging and compelling problems in computer science
+
+
+\section{Education}
+\begin{tabular}{r|p{15cm}}
+    \textsc{May} 2019 & Missouri University of Science and Technology, Rolla MO  \\
+                      & \textbf{Bachelor of Science, Computer Science} \\
+                      & GPA~: \textbf{3.4/4.0}, Major GPA~: \textbf{3.9/4.0} \\
+                      & Relevant Coursework:
+                      Theory of Computer Science,
+                      Algorithms,
+                      Data Structures,
+                      Intro Microcontroller Embedded Design
+\end{tabular}
+
+
+\section{Work Experience}
+\begin{tabular}{r|p{15cm}}
+    \textsc{Aug 2017} & \textbf{Student Worker/Technician} \\
+    March 2017          & \textit{ITRSS/Minerfly}, Rolla MO \\ &
+    \begin{itemize}
+    \item{Maintained and built several frames for research flights}
+    \item{Designed real-time computer vision safety system}
+    \item{Managed and maintained flightstack for several UAVs}
+    \item{Supervised 50+ flights as Safety Personnel/Ground Control}
+
+    \end{itemize} \br\\
+
+\end{tabular}
+
+
+\section{Professional Affiliations}
+\begin{tabular}{r|p{15cm}}
+    \textsc{Dr. Gayla Olbricht} & \textbf{Research Assistant} \\
+     & \begin{itemize}
+    \item Analyzed neuroimaging data to look for statistical trends
+    \item Co-authored a paper describing the project
+    \item Presented research to a board of peers
+    \end{itemize} \br\\
+
+    \textsc{Robotics Team} & \textbf{Electrical Team}, Sub-team Lead \\
+     & \begin{itemize}
+    \item Lead six person subsystem of undergraduate and graduate students
+    \item Conducted, designed, and documented tests to assure software/hardware quality and reliability
+    \item Utilized \href{https://sourceforge.net/projects/libdc1394/}{dc1394} in a C environment to capture images stereoscopically
+    \item Collaborated with Program Manager and team members to design flight code
+    \end{itemize} \br\\
+
+    \textsc{Mars Rover Team} & \textbf{Telemetry/Controls}, \\
+     & \begin{itemize}
+       \item{Worked with both Science and Telemetry teams to design data collection devices}
+       \item{Designed software to visualize scientific data}
+     \end{itemize} \br\\
+
+
+\end{tabular}
+
+\section{Technical Skills}
+\begin{tabular}{r|p{15cm}}
+    \textsc{\small Languages} &
+    Haskell,
+    Python,
+    Go,
+    Assembly,
+    C,
+    C++,
+    Javascript,
+    Elm,
+    \textsc{Bash},
+    \LaTeX{},
+    Julia,
+    Matlab \br\\
+
+    \textsc{\small Software} &
+    Git/Github,
+    Interface Builder,
+    LLVM Debugger,
+    Make,
+    OpenCV,
+    PostgreSQL,
+    Valgrind,
+    Vim,
+    ZSH
+\end{tabular}
+
+
+\end{document}
