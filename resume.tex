@@ -1,0 +1,168 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{xunicode,xltxtra,url,parskip,enumitem,marvosym,graphicx,titlesec,hyperref,setspace,siunitx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage[absolute]{textpos}
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\lmline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks=false,allbordercolors={0 0 0},pdfborderstyle={/S/U/W 1}}
+
+\newcommand{\br}{\\\multicolumn{2}{c}{}}
+\newgeometry{noheadfoot=true,top=.25in,bottom=.5in, left=.5in, right=.5in}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{3pt}
+
+\setlist[itemize]{label=$\circ$, leftmargin=12pt, noitemsep, before={\vspace*{-.5\baselineskip}}, after={\vspace*{-\baselineskip}}}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\par{\centering
+    {\Huge \textsc{M. Cooper Healy}
+}\bigskip\par}
+
+\begin{center}
+\begin{tabular}{rl}
+    \textsc{Email }        & \lmline{mailto:matthew@healy.ink} \\
+    \textsc{Phone }        & (217) 204 -- 1461  \\
+    \textsc{Github }       & \lmline{https://github.com/healym} \\
+\end{tabular}
+\end{center}
+
+
+\section{Experience}
+
+\begin{tabular}{r|p{15cm}}
+    \textsc{Present}  & \textbf{Software Engineer II} \\
+    \textsc{Feb 2021} & \textit{Garmin International}, Olathe KS \\ &
+    \begin{itemize}
+    \item Added Authentication for integration tests, removing the need to store credentials
+    \item Secured internal endpoints on production services by adding secured connective layer
+    \item Wrote custom application-layer API handling to allow for more complex internal API usage
+    \item Upgraded integration testing to prevent more user-visible cases of mis-deployment
+
+    \end{itemize} \br\\
+
+\end{tabular}
+
+\begin{tabular}{r|p{15cm}}
+    \textsc{Feb 2021}  & \textbf{Software Engineer} \\
+    \textsc{Feb 2020}  & \textit{Service Management Group}, Kansas City MO \\ &
+    \begin{itemize}
+    \item Developed tools to monitor and diagnose data quality issues on a large scale
+    \item Mitigated client-impacting issues with data quality in a timely and permanent manner
+    \item Redesigned messaging architecture for critical and high load infrastructure applications
+    \item Owned and Maintained orphaned projects and updated and upgraded them to fit new standards
+
+    \end{itemize} \br\\
+
+\end{tabular}
+
+\begin{tabular}{r|p{15cm}}
+    \textsc{Feb 2020}   & \textbf{Software Engineer} \\
+    \textsc{July 2019}  & \textit{Cboe Global Markets}, Lenexa KS \\ &
+    \begin{itemize}
+    \item Designed scalable software to automate analysis of market data
+    \item Prioritized business logic by representing consumers of analysis in design discussions
+    \item Managed the migration of hundreds of scripts to improved analysis framework
+    \item Promoted TDD for all new software through development of new test suite
+
+    \end{itemize} \br\\
+
+\end{tabular}
+
+\begin{tabular}{r|p{15cm}}
+    \textsc{Mar 2019} & \textbf{Software Engineering Intern} \\
+    \textsc{Jan 2018} & \textit{Garmin International}, Olathe KS \\ &
+    \begin{itemize}
+    \item Owned and maintained .NET tool for configuration of airframes
+    \item Designed testing framework to ensure integrity of new airframe configurations
+    \item Guided two other interns in updating and maintaining said testing framework
+    \item Collaborated directly with users to design new features based on need
+    \end{itemize} \br\\
+
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{r|p{15cm}}
+    \textsc{May} 2019 & Missouri University of Science and Technology, Rolla MO  \\
+                      & \textbf{Bachelor of Science, Computer Science} \\
+                      & GPA: \textbf{3.5/4.0}, Major GPA: \textbf{3.9/4.0} \\
+\end{tabular} \b\\
+
+\section{Additional Experience}
+\begin{tabular}{r|p{15cm}}
+    \textsc{Mar 2018} & \textbf{Research Assistant --- Data Science} \\
+    \textsc{Aug 2017} & \textit{Dr. Gayla Olbricht}, Missouri University of Science and Technology \\ &
+    \begin{itemize}
+    \item Analyzed neuroimaging datasets to look for relationship between age and SOD2 allele
+    \item Tested for differences in structures and SOD2 status using multivariate analysis of covariance
+    \item Measured five different aspects of white matter structural integrity by analyzing DTI imaging data
+    \end{itemize} \br\\
+
+    \textsc{Jun 2019} & \textbf{Secretary} and \textbf{Electrical Team Lead} \\
+    \textsc{Aug 2016} & \textit{Underwater Robotics Team}, Missouri University of Science and Technology \\ &
+    \begin{itemize}
+    \item Desined critical software for objective-recognition and autonomous movement
+    \item Designed optical distance measurement software for submersible robot
+    \item Designed boards for system controls and power management
+    \item Managed communication for team as a whole between executive officers and members
+    \end{itemize} \br\\
+
+\end{tabular}
+
+\section{Technical Skills}
+\begin{tabular}{r|p{15cm}}
+    \textsc{\small \textbf {Programming Languages}} &
+    C++,
+    Python,
+    C\#,
+    Go,
+    Haskell,
+    PostgreSQL,
+    Javascript,
+    Common Lisp\\
+
+    \textsc{\small \textbf {Markup Languages}} &
+    Markdown,
+    \LaTeX,
+    HTML,
+    XML\\
+
+    \textsc{\small \textbf {Software}} &
+    Git/Github,
+    GNU/Linux,
+    Make,
+    OpenCV,
+    Valgrind,
+    GDB,
+    Vim,
+    Visual Studio
+\end{tabular}
+
+\end{document}
