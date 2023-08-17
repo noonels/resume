@@ -24,7 +24,7 @@
 \newcommand{\br}{\\\multicolumn{2}{c}{}}
 \newgeometry{noheadfoot=true,top=.25in,bottom=.5in, left=.5in, right=.5in}
 
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[]
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{4pt}{3pt}
 
 \setlist[itemize]{label=$\circ$, leftmargin=12pt, noitemsep, before={\vspace*{-.5\baselineskip}}, after={\vspace*{-\baselineskip}}}
@@ -53,47 +53,8 @@
     \textsc{Github }       & \lmline{https://github.com/noonels} \\
 \end{tabular}
 \end{center}
-
-\section{Education}
-\begin{tabular}{r p{15cm}}
-  \textsc{2019} & \textbf{Bachelor of Science, Computer Science} \\
-                & Missouri University of Science and Technology, Rolla MO  \\
-                & GPA: 3.5/4.0, Major GPA: \textbf{3.9/4.0} \\
-                & \textbf{Cum Laude} \\
-\end{tabular}
-
-\section{Research Experience}
-\begin{tabular}{r p{15cm}}
-    \textsc{2018} & \textbf{Research Assistant --- Data Science} \\
-    \textsc{2017} & \textit{Dr. Gayla Olbricht}, Missouri University of Science and Technology \\ &
-    \begin{itemize}
-    \item Looked for statistical connection between certain alleles and presence of alzheimer's disease
-    \item Analyzed neuroimaging datasets to look for relationship between age and SOD2 allele
-    \item Tested for differences in structures and SOD2 status using multivariate analysis of covariance
-    \item Measured five different aspects of white matter structural integrity by analyzing DTI data
-    \item Co-authored a paper describing the project and presented research to a board of peers
-    \item Collaborated with other scientists to ensure research aligned with existing work
-    \item Performed statistical analysis over several gigabyte dataset using Numpy, Pandas, and R
-    \end{itemize} \br\\
-
-\end{tabular}
-
-
-\section{Associations}
-\begin{tabular}{r p{15cm}}
-  \textsc{2016-2019} & \textbf{Missouri University of Science and Technology Underwater Robotics Team} \\
-\end{tabular}
-
-\begin{tabular}{r p{15cm}}
-  \textsc{2017-2018} & \textbf{Missouri University of Science and Technology Sig-Game} \\
-\end{tabular}
-
-\begin{tabular}{r p{15cm}}
-  \textsc{2015-2016} & \textbf{American Nuclear Society} \\
-\end{tabular}
-
 \section{Work Experience}
-\begin{tabular}{r p{15cm}}
+\begin{tabular}{r|p{15cm}}
   \textsc{---}  & \textbf{Senior Software Engineer} \\
   \textsc{2023} & \textit{Copper Labs}, San Fransisco CA
   \\ &  
@@ -112,7 +73,7 @@
 \end{tabular}
 
 
-\begin{tabular}{r p{15cm}}
+\begin{tabular}{r|p{15cm}}
   \textsc{2023} & \textbf{Software Engineer} \\
   \textsc{2021} & \textit{C2FO}, Leawood KS
   \\ &  
@@ -138,7 +99,7 @@
   \textbf{Tech} & \textit{TypeScript, React, Python, PostgreSQL, AWS Lambda, Docker, Kubernetes, NestJS, Kafka, RabbitMQ} \br \\
 \end{tabular}
 
-\begin{tabular}{r p{15cm}}
+\begin{tabular}{r|p{15cm}}
   \textsc{2021}  & \textbf{Software Engineer II} \\
                  & \textit{Garmin International}, Olathe KS
   \\ &
@@ -154,7 +115,7 @@
   \textbf{Tech} & \textit{C++, Boost, PostgreSQL, Docker, QEMU} \br \\
 \end{tabular}
 
-\begin{tabular}{r p{15cm}}
+\begin{tabular}{r|p{15cm}}
   \textsc{2021}  & \textbf{Software Engineer / DevOps Liason} \\
   \textsc{2020}  & \textit{Service Management Group}, Kansas City MO
   \\ &
@@ -171,7 +132,7 @@
   \textbf{Tech} & \textit{C\#, PostgreSQL, Kafka, RabbitMQ, elasticsearch, TypeScript, AngularJS} \br \\
 \end{tabular}
 
-\begin{tabular}{r p{15cm}}
+\begin{tabular}{r|p{15cm}}
   \textsc{2020}  & \textbf{Software Engineer} \\
   \textsc{2019}  & \textit{Cboe Global Markets}, Lenexa KS
   \\ &
@@ -190,7 +151,7 @@
   \textbf{Tech} & \textit{Python, PostgreSQL, Hadoop, Spark} \br \\
 \end{tabular}
 
-\begin{tabular}{r p{15cm}}
+\begin{tabular}{r|p{15cm}}
   \textsc{2019} & \textbf{Software Engineering Intern} \\
   \textsc{2018} & \textit{Garmin International}, Olathe KS
   \\ &
@@ -205,5 +166,46 @@
        \end{itemize} \\
   \textbf{Tech} & \textit{C\#, Python, Embedded C} \br \\
 \end{tabular}
+
+
+\section{Education}
+\begin{tabular}{r p{15cm}}
+  \textsc{2019} & \textbf{Bachelor of Science, Computer Science} \\
+                & Missouri University of Science and Technology, Rolla MO  \\
+                & GPA: 3.5/4.0, Major GPA: \textbf{3.9/4.0} \\
+                & \textbf{Cum Laude} \\
+\end{tabular}
+
+\section{Research Experience}
+\begin{tabular}{r|p{15cm}}
+    \textsc{2018} & \textbf{Research Assistant --- Data Science} \\
+    \textsc{2017} & \textit{Dr. Gayla Olbricht}, Missouri University of Science and Technology \\ &
+    \begin{itemize}
+    \item Looked for statistical connection between certain alleles and presence of alzheimer's disease
+    \item Analyzed neuroimaging datasets to look for relationship between age and SOD2 allele
+    \item Tested for differences in structures and SOD2 status using multivariate analysis of covariance
+    \item Measured five different aspects of white matter structural integrity by analyzing DTI data
+    \item Co-authored a paper describing the project and presented research to a board of peers
+    \item Collaborated with other scientists to ensure research aligned with existing work
+    \item Performed statistical analysis over several gigabyte dataset using Numpy, Pandas, and R
+    \end{itemize} \br\\
+
+\end{tabular}
+
+
+\section{Associations}
+\begin{tabular}{r|p{15cm}}
+  \textsc{2016-2019} & \textbf{Missouri University of Science and Technology Underwater Robotics Team} \\
+\end{tabular}
+
+\begin{tabular}{r|p{15cm}}
+  \textsc{2017-2018} & \textbf{Missouri University of Science and Technology Sig-Game} \\
+\end{tabular}
+
+\begin{tabular}{r|p{15cm}}
+  \textsc{2015-2016} & \textbf{American Nuclear Society} \\
+\end{tabular}
+
+
 
 \end{document}
